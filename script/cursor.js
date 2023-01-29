@@ -1,12 +1,18 @@
 (() => { 
 
-    var cursor = document.getElementById('cursor');
-    
+    var cur = document.querySelector('.cursor');
+    var a = document.querySelectorAll('a');
     document.addEventListener('mousemove', e => {
-        cursor.setAttribute('style', `top:  ${e.pageY -10}px; left: ${e.pageX-10}px;`);
+        cur.setAttribute('style', `top:  ${e.pageY -10}px; left: ${e.pageX-10}px;`);
     });
-
-    
+    a.forEach(item=>{
+        item.addEventListener('mouseover',e=>{
+            cur.classList.add('hover');
+        });
+        item.addEventListener('mouseleave',e=>{
+            cur.classList.remove('hover');
+        });
+    });
  })();
  
  

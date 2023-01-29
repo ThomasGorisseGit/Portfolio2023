@@ -1,67 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-html,*{
-    font-family: 'Roboto', sans-serif;
-}
-body {
-    background-color: rgb(56, 56, 56);
-	height: 100%;
-    margin: 0;
-    cursor:none !important;
-    overflow-x: hidden;
-}
-main{
-    height: 100vh;
-    width: 100vw;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-}
-div{
-    color: rgb(221, 221, 221);
-}
-#cursor{
-    position: absolute;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    background-color: #fff;
-    pointer-events: none;
-}
 
-.content{
-    background-color: rgb(53, 53, 53);
-    width: 80%;
-    padding: 3%;
-    margin-top: 5vh;
-    height: 100vh;
-    scroll-snap-align: center;
-}
-.center{
-    align-items: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&family=Ubuntu:wght@500&display=swap');
+.introduction{
+    display:flex;
     text-align: center;
-    justify-content: center;
-    margin-inline: auto;
-}
-.column{
-    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #title{
     color: #fff;
+    font-size: 3em;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
 }
 
-#IUT{
-    cursor:none !important;
+#subtitle.show{
+    transform: translateX(20%);
+}
+#subtitle{
+    transition-delay: 200ms;
+    color: rgb(202, 202, 202);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.3em;
+    margin: 0;
+}
+#projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(42, 42, 43);
 
-    color: rgb(141, 141, 141);
+}
+h2{
+    font-size: 1.8em;
+    margin: 15vh;
+    color: #fff;
+}
+.projectList{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    text-align: center;
+    width: 100vw;
+}
+.project{
+    padding:0;
+}
+.project:nth-child(2){
+    transition-delay: 200ms;
+}
+.project:nth-child(3){
+    transition-delay: 400ms;
 }
 
-#test{
-    width: 100%;
-    height: 100vh;
-
+.projectLogo{
+    border-radius: 20px;
+    width: 400px;
+    height: auto;
 }
-#testdiv{
-    scroll-snap-align: center;
-
+#competences{
+    text-align: center;
+}
+ul{
+    list-style:none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+li{
+    padding:30px;
+}
+.web:nth-child(2), .script:nth-child(2)
+{
+    transition-delay: 200ms;
+}
+.web:nth-child(3), .script:nth-child(3)
+{
+    transition-delay: 300ms;
+}
+.web:nth-child(4), .script:nth-child(4)
+{
+    transition-delay: 400ms;
+}
+.web:nth-child(5), .script:nth-child(5)
+{
+    transition-delay: 500ms;
 }

@@ -5,38 +5,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/preset.css">
     <link rel="stylesheet" href="./style/main.css">
+    <script defer src="script/scroll.js"></script>
     <title>Portefolio</title>
 </head>
 
 <body>
     <main>
-        <div class="content center">
-            <h1 id="title" class="center">Portefolio Thomas Gorisse</h1>
-            <div class="center column">
-                <div id="description">
-                    <h2 class="subTitle">Description</h2>
-                    <p>
-                        Je suis un étudiant en 2ème année de BUT informatique à <a id="IUT"
-                            href="https://iut.univ-cotedazur.fr/">l'IUT de Nice Côte d'Azur</a>.
-                        </br>
-                        Passioné depuis très jeune par l'informatique j'ai rapidement décidé d'en faire plus tard mon
-                        métier. C'est pourquoi j'ai choisi au Lycée
-                        Stanislas Cannes les spécialités mathématiques, numérique et science de l'ingénieur et physique
-                        chimie.
-                    </p>
+        <section class="introduction">
+            <h1 class="hidden rightTransition" id="title">Thomas Gorisse</h1>
+            <p class="hidden leftTransition" id="subtitle">Etudiant en informatique</p>
+        </section>
+        <section id="projects">
+            <h2 class="hidden rightTransition">Mes projets</h2>
+            <div class="projectList">
+                <div class="project hidden leftTransition">
+                    <a class="projectLink" href="https://github.com/ThomasGorisseGit/MerchPHP"><img class="projectLogo" src="./assets/512groove2.png" alt="MerchPHP"></a>
                 </div>
-                <div id="projets">
-                    <h2 class="subTitle">Mes projets</h2>
+                <div class="project hidden leftTransition">
+                    <a class="projectLink" href="https://github.com/ThomasGorisseGit/Site-ami-portefolio"><img class="projectLogo" src="./assets/512groove.png" alt="Site portefolio ami"></a>
                 </div>
-                <div class="competences"></div>
+                <div class="project hidden leftTransition">
+                    <a class="projectLink" href="https://github.com/ThomasGorisseGit/MerchPHP"><img class="projectLogo" src="./assets/512groove.png" alt="MerchPHP"></a>
+                </div>
             </div>
-        </div>
-        <div id="testdiv">
-            <img id="test" src="./assets/testpicture.jpg" alt="">
-        </div>
+        </section>
+        <section id="competences">
+            <h2 class="hidden leftTransition">Compétences</h2>
+            <ul>
+                <li class="hidden rightTransition web"><img width="75px" src="./assets/icon/html icon.png" alt="Icon html"></li>
+                <li class="hidden rightTransition web"><img width="75px" src="./assets/icon/css icon.png" alt="Icon css"></li>
+                <li class="hidden rightTransition web"><img width="75px" src="./assets/icon/js icon.png" alt="Icon js"></li>
+                <li class="hidden rightTransition web"><img width="75px" src="./assets/icon/react icon.png" alt="Icon js"></li>
+                <li class="hidden rightTransition web"><img width="75px" src="./assets/icon/php icon.png" alt="Icon php"></li>
+            
+
+            </ul>
+            <ul>
+                <li class="hidden leftTransition script"><img width="75px" src="./assets/icon/Javaicon.png" alt="Icon de java"></li>
+                <li class="hidden leftTransition script"><img width="75px" src="./assets/icon/python icon.png" alt="Icon python"></li>
+                <li class="hidden leftTransition script"><img width="75px" src="./assets/icon/sql icon.png" alt="Icon sql"></li>
+                <li class="hidden leftTransition script"><img width="75px" src="./assets/icon/git icon.png" alt="Icon git"></li>
+                <li class="hidden leftTransition script"><img width="75px" src="./assets/icon/C icon.png" alt="Icon C"></li>
+            </ul>
+        </section>
     </main>
-    <div id="cursor"></div>
+    <div class="cursor"></div>
 
     <script src="./script/cursor.js"></script>
 </body>
