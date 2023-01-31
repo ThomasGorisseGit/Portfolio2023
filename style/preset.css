@@ -37,6 +37,10 @@ section{
     transform: translateX(30%);
     transition: all 1s;
 }
+.fade{
+    filter: blur(10px);
+    transition: all 1s;
+}
 .show{
     opacity: 1;
     filter: blur(0);

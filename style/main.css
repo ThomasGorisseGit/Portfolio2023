@@ -7,10 +7,13 @@
     align-items: center;
     justify-content: center;
 }
+h3{
+    font-size: 1.6em;
+}
 
 #title{
     color: #fff;
-    font-size: 3em;
+    font-size: 4em;
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
 }
@@ -22,47 +25,15 @@
     transition-delay: 200ms;
     color: rgb(202, 202, 202);
     font-family: 'Roboto Mono', monospace;
-    font-size: 1.3em;
+    font-size: 1.7em;
     margin: 0;
 }
-#projects{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+#competences{
+    padding-top: 3vh;
     text-align: center;
-    justify-content: center;
     background-color: rgb(42, 42, 43);
 
-}
-h2{
-    font-size: 1.8em;
-    margin: 15vh;
-    color: #fff;
-}
-.projectList{
-    display: flex;
-    justify-content: space-evenly;
-    align-items:center;
-    text-align: center;
-    width: 100vw;
-}
-.project{
-    padding:0;
-}
-.project:nth-child(2){
-    transition-delay: 200ms;
-}
-.project:nth-child(3){
-    transition-delay: 400ms;
-}
-
-.projectLogo{
-    border-radius: 20px;
-    width: 400px;
-    height: auto;
-}
-#competences{
-    text-align: center;
 }
 ul{
     list-style:none;
@@ -88,4 +59,61 @@ li{
 .web:nth-child(5), .script:nth-child(5)
 {
     transition-delay: 500ms;
+}
+#projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+h2{
+    font-size: 1.8em;
+    margin: 15vh;
+    color: #fff;
+}
+.projectList{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    text-align: center;
+    width: 100vw;
+}
+.project{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.projectLink{
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.projectLogo{
+    width: 100%;
+    border-radius: 20px;
+    height: auto;
+}
+.description{
+    background-color: rgb(42, 42, 43);
+    border-radius: 13px;
+    padding:3vw;
+    width: 25%;
+    margin-right: 1vw;
+    height: 75%;
+
+}
+aside.description>ul>li.script{
+    margin: 0;
+    padding-inline: 1vw;
+    padding-top: 0;
+}
+.sujet{
+    width: 90%;
+    margin: auto;
+    text-align: center;
 }
