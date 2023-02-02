@@ -8,7 +8,7 @@
     justify-content: center;
 }
 h3{
-    font-size: 1.6em;
+    font-size: 1.9em;
 }
 
 #title{
@@ -68,7 +68,7 @@ li{
     justify-content: center;
 }
 h2{
-    font-size: 1.8em;
+    font-size: 2em;
     margin: 15vh;
     color: #fff;
 }
@@ -78,8 +78,11 @@ h2{
     align-items:center;
     text-align: center;
     width: 100vw;
+    flex-direction: column;
 }
 .project{
+    margin-top: 15vh;
+    margin-bottom: 15vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -103,9 +106,12 @@ h2{
     border-radius: 13px;
     padding:3vw;
     width: 25%;
-    margin-right: 1vw;
+    margin-inline: 2vw;
     height: 75%;
 
+}
+aside>ul{
+    padding: 0;
 }
 aside.description>ul>li.script{
     margin: 0;
