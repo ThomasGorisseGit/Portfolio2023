@@ -9,14 +9,10 @@ body {
     background-color: rgb(56, 56, 56);
 	height: 100%;
     margin: 0;
-    cursor:none !important;
     overflow-x: hidden;
 }
 
-a{
-    cursor: none !important;
-    text-decoration: none;
-}
+
 div{
     color: rgb(221, 221, 221);
 }
@@ -47,14 +43,6 @@ section{
     transform: translateX(0);
 }
 
-.cursor{
-    position: absolute;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    background-color: rgb(184, 184, 184);
-    pointer-events: none;
-}
 
 .hover{
     background-color: rgb(13, 62, 90);
