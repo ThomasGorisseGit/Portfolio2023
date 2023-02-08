@@ -134,3 +134,28 @@ aside.description>ul>li.script{
     justify-content: center;
     margin: auto;
 }
+#aboutMe{
+    text-align: center;
+}
+.aboutmediv{
+    display: flex;
+    justify-content: center;
+}
+#personalDescription{
+    background-color: rgb(42, 42, 43);
+    border-radius: 8px;
+    margin:0 20px;
+    padding: 4vh;
+    width: 40%;
+    height: fit-content;
+}
+.icon{
+    width: 100px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 30%;
+    margin: auto;
+}
