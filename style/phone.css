@@ -31,6 +31,8 @@
     .comp{
         display: flex;
         flex-direction: column;
+        padding-inline: 2%;
+        
     }
     .media{
         display: flex;
