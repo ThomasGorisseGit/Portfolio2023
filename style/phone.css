@@ -23,8 +23,16 @@
     #apokae{
         margin: 0 auto;
     }
-    
 
+    .aboutmediv{
+        flex-direction: column;
+    }
+    #personalDescription{
+        width: 80%;
+    }
+    #abouth2{
+        margin:10vh;
+    }
 }
 @media screen and (max-width:700px) {
   
