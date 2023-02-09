@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&family=Ubuntu:wght@500&display=swap');
 
 html,*{
-    outline: solid 3px green;
     font-family: 'Roboto', sans-serif;
 }
 body {
