@@ -1,5 +1,7 @@
 @media screen and (max-width:900px) {
-
+    #comph2{
+        width:fit-content;
+    }
     .project{
         flex-direction: column;
         text-align: center;
@@ -54,4 +56,7 @@
     #subtitle.show {
         transform: translate(0);
     }
-}
+    #more{
+        flex-direction: column;
+    }
+}   
