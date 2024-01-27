@@ -30,7 +30,6 @@ h3{
 }
 
 #competences{
-    padding-top: 3vh;
     text-align: center;
     background-color: rgb(42, 42, 43);
 
@@ -43,6 +42,11 @@ ul{
 }
 li{
     padding:30px;
+}
+li.web{
+
+    display: flex;
+    align-items: center;
 }
 .web:nth-child(2), .script:nth-child(2)
 {
@@ -100,6 +104,15 @@ h2{
     border-radius: 20px;
     height: auto;
 }
+a.phone{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+img.phone{
+    width: 40% !important;
+}
 
 #apokae{
     margin: 0;
@@ -129,7 +142,6 @@ aside.description>ul>li.script{
 }
 .projectLinkmedia{
     display: none;
-    width: 40%;
     text-align: center;
     justify-content: center;
     margin: auto;
@@ -173,4 +185,43 @@ a{
 }
 #aboutMe{
     min-height: 85vh;
+}
+.bg-image{
+    position: absolute;
+    height: 30vh;
+    opacity: 0.6;
+    z-index: -1;
+    top: 40vh;
+    right: 20vw;
+}
+.cover-entry{
+    background-image: url("../assets/bg5.png");
+
+
+}
+.cover-comp{
+    background-image: url("../assets/bg4.png");
+
+}
+.config{
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.2;
+}
+.bg-animation{
+    /* do animation once */
+    animation: bg 3s ease-in-out 1;
+}
+@keyframes bg{
+    0%{
+        opacity: 0.0;
+    }
+    100%{
+        opacity: 0.2;
+    }
 }

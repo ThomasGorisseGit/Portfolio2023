@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./style/phone.css" />
     <link rel="icon" href="./assets/utilisateur.png">
     <script defer src="script/scroll.js"></script>
-    <title>Portefolio</title>
+    <title>Portfolio</title>
 </head>
 
 <body>
@@ -20,32 +20,37 @@
             <p class="hidden leftTransition" id="subtitle">
                 Etudiant en informatique
             </p>
+            <!-- <img src="./assets/bg4.png" alt="" class="bg-image"> -->
+            <div class="cover-entry config"></div>
         </section>
 
         <section id="competences">
-            <h2 id="comph2"class="hidden leftTransition">Compétences</h2>
+
+            <div class="config cover-comp"></div>
+            <h2 id="comph2" class="hidden leftTransition">Compétences</h2>
             <div class="media">
-            <ul class="comp">
+                <ul class="comp">
                     <li class="hidden rightTransition web">
-                        <img width="75px" src="./assets/icon/html icon.png" alt="Icon html" />
+                        <img width="150px" src="./assets/icon/spring icon.png" alt="Icon css" />
+                    </li>
+                    <li class="hidden leftTransition script">
+                        <img width="75px" src="./assets/icon/Javaicon.png" alt="Icon de java" />
                     </li>
                     <li class="hidden rightTransition web">
-                        <img width="75px" src="./assets/icon/css icon.png" alt="Icon css" />
-                    </li>
-                    <li class="hidden rightTransition web">
-                        <img width="75px" src="./assets/icon/js icon.png" alt="Icon js" />
+                        <img width="75px" src="./assets/icon/angular icon.png" alt="Icon html" />
                     </li>
                     <li class="hidden rightTransition web">
                         <img width="75px" src="./assets/icon/react icon.png" alt="Icon js" />
                     </li>
+                </ul>
+                <ul class="comp">
+                    <li class="hidden leftTransition script">
+                        <img width="75px" src="./assets/icon/C++ icon.png" alt="Icon C++" />
+                    </li>
                     <li class="hidden rightTransition web">
                         <img width="75px" src="./assets/icon/php icon.png" alt="Icon php" />
                     </li>
-            </ul>
-            <ul class="comp">
-                    <li class="hidden leftTransition script">
-                        <img width="75px" src="./assets/icon/Javaicon.png" alt="Icon de java" />
-                    </li>
+
                     <li class="hidden leftTransition script">
                         <img width="75px" src="./assets/icon/python icon.png" alt="Icon python" />
                     </li>
@@ -53,27 +58,160 @@
                         <img width="75px" src="./assets/icon/sql icon.png" alt="Icon sql" />
                     </li>
                     <li class="hidden leftTransition script">
-                        <img width="75px" src="./assets/icon/git icon.png" alt="Icon git" />
-                    </li>
-                    <li class="hidden leftTransition script">
                         <img width="75px" src="./assets/icon/C icon.png" alt="Icon C" />
                     </li>
-            </ul>
+                </ul>
             </div>
         </section>
+        <section id="aboutMe">
+            <h2 id="abouth2" class="hidden fade">À propos de moi</h2>
+            <div class="aboutmediv">
 
+                <p class="hidden fade" id="personalDescription">
+                    Salut, moi c'est Thomas !
+                    <br />
+                    <br />
+                    J'ai actuellement 20 ans et je suis passionné par l'informatique depuis mon plus jeune âge.
+                    J'ai commencé à m'intéresser à la programmation depuis le lycée et ai décidé d'en faire mon métier.
+                    <br />
+                    <br />
+                    Pour concrétiser mon rêve, j'ai intégré avec succès un BUT Informatique à l'IUT de Nice. Bien que ma formation ait duré seulement deux ans, elle a solidifié ma volonté de poursuivre mes études dans ce domaine.
+                    <br />
+                    <br />
+                    Grâce à d'excellent résultats et à une forte motivation, j'ai eu l'opportunité d'intégrer l'INSA Lyon.
+                    Qui m'a recruté pour mes compétences techniques mais également humaines, en mettant en avant mon esprit d'équipe et mon serieux.
+                    <br />
+                    <br />
+                    Je suis actuellement en première année de cycle ingénieur à l'INSA Lyon, et je suis à la recherche d'un stage de 2 mois à partir du 12 Juin 2024.
+                    Je suis spécialisé dans le développement d'applications web et mobile, mais je suis également ouvert à d'autres domaines.
+                    <br>
+                    <br>
+                    Si vous êtes intéressé par mon profil, n'hésitez pas à me contacter ! 
+
+
+
+                </p>
+
+                <div id="more">
+                    <ul class="contact">
+                        <li class="hidden leftTransition"><img class="icon" src="./assets/email.png"
+                                alt="email pic"><br />thomas.gorisse07@gmail.com</li>
+                        <li class="hidden leftTransition"><a href="https://github.com/ThomasGorisseGit/"><img
+                                    class="icon" src="./assets/github.png" alt="github pic"><br />ThomasGorisseGit</a>
+                        </li>
+                    </ul>
+                    <ul class="contact">
+                        <li class="hidden rightTransition"><a href="./assets/cv/Gorisse Thomas CV.pdf"
+                                download="CV_Gorisse_Thomas"><img class="icon" src="./assets/cv.png"
+                                    alt="icon de cv"><br />Télécharger mon CV</a></li>
+                        <li class="hidden rightTransition"><a href="https://www.insa-lyon.fr/"><img class="icon"
+                                    src="./assets/insa.png" alt="logo universite cote d'azur"><br /> Ma
+                                formation</a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </section>
         <section id="projects">
             <h2 class="hidden fade">Mes projets</h2>
-            <div class="projectList">
+
+
+
+            <div class="project">
+                <a class="projectLink hidden leftTransition phone"
+                    href="https://github.com/ThomasGorisseGit/TodoList"><img class="projectLogo phone"
+                        src="./assets/tod'app.png" alt="Tod'app" />
+                   <img class="projectLogo phone"
+                        src="./assets/tod'app2.png" alt="Tod'app" />
+
+                </a>
+                <aside class="description hidden rightTransition">
+                    <h3>Description</h3>
+                    <a class="projectLinkmedia hidden"
+                    href="https://github.com/ThomasGorisseGit/TodoList"><img class="projectLogo phone"
+                        src="./assets/tod'app.png" alt="Tod'app" />
+                   <img class="projectLogo phone"
+                        src="./assets/tod'app2.png" alt="Tod'app" />
+
+                </a>
+                    <ul>
+                        <li class="script">
+                            <img width="75px" src="./assets/icon/angular icon.png" alt="Icon C" />
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="script">
+                            <img width="175px" src="./assets/icon/spring icon.png" alt="Icon C" />
+                        </li>
+
+                    </ul>
+                    <p class="sujet">
+                        Réalisation d'une application web Angular / Spring Boot. 
+                        <br>
+                        <br>
+                        L'objectif était de réaliser une application web en Angular / Spring Boot, pour mobile avec Cordova
+                        <br>
+                        <br>
+                        L'application consiste à gérer des TodoList et des notes, avec un système de connexion et d'inscription.
+                    </p>
+                </aside>
+            </div>
+
+
+
                 <div class="project">
-                    <a class="projectLink hidden leftTransition"
-                        href="https://github.com/ThomasGorisseGit/MerchPHP"><img class="projectLogo"
-                            src="./assets/512groove.png" alt="MerchPHP" /></a>
-                    <aside class="description hidden rightTransition">
+                    <aside class="description hidden leftTransition">
                         <h3>Description</h3>
                         <a class="projectLinkmedia hidden "
-                            href="https://github.com/ThomasGorisseGit/MerchPHP"><img class="projectLogo"
-                                src="./assets/512groove.png" alt="MerchPHP" /></a>
+                            href="https://github.com/ThomasGorisseGit/ERP_Essence_BUT">
+                            <img class="projectLogo"src="./assets/ERP.png" alt="ERP" />
+                         </a>    
+                        <ul>
+                            <li class="script">
+                                <img width="75px" src="./assets/icon/angular icon.png" alt="Icon C" />
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="script">
+                                <img width="175px" src="./assets/icon/spring icon.png" alt="Icon C" />
+                            </li>
+
+                        </ul>
+                        <p class="sujet">
+                            Réalisation d'un site internet en Angular / Spring Boot. 
+                            <br>
+                            <br>
+                            Celui-ci avait pour but d'apprendre de manière autonome les technologies Angular et Spring Boot.
+                            <br>
+                            <br>
+                            L'idée provient d'un projet de groupe réalisé dans le cadre du BUT informatique de Nice, néanmoins j'ai recommencé seul le projet avec des technologies différentes.
+                            <br>
+                            <br>
+                            Le sujet traite d'un logiciel de gestion pour une entreprise de vente de carburant.
+                        </p>
+                    </aside>
+
+                    <a class="projectLink hidden rightTransition"
+                        href="https://github.com/ThomasGorisseGit/ERP_Essence_BUT">
+                        <img class="projectLogo"src="./assets/ERP2.png" alt="ERP" />
+                    </a>
+
+                            
+
+                </div>
+
+
+                <div class="project">
+                    <a class="projectLink hidden leftTransition"
+                        href="https://github.com/ThomasGorisseGit/MerchPHP">
+                        <img class="projectLogo"
+                            src="./assets/512groove.png" alt="MerchPHP" />
+                    </a>
+                    <aside class="description hidden rightTransition">
+                        <h3>Description</h3>
+                        <a class="projectLinkmedia hidden " href="https://github.com/ThomasGorisseGit/MerchPHP"><img
+                                class="projectLogo" src="./assets/512groove.png" alt="MerchPHP" /></a>
 
                         <ul>
                             <li class="script">
@@ -139,44 +277,15 @@
                             </li>
                         </ul>
                         <p class="sujet">
-                            Réalisation de mon premier site internet représentant un formulaire de recueil de données, effectué dans le cadre de mon
+                            Réalisation de mon premier site internet représentant un formulaire de recueil de données,
+                            effectué dans le cadre de mon
                             parcours scolaire en collaboration avec un camarade de ma formation.
                         </p>
                     </aside>
                 </div>
             </div>
         </section>
-        <section id="aboutMe">
-            <h2 id="abouth2" class="hidden fade">À propos de moi</h2>
-            <div class="aboutmediv">
-
-                <p class="hidden fade" id="personalDescription">
-                    Passionné de code et de technologies, j'ai décidé de rejoindre le BUT informatique de Nice en octobre 2021. 
-                    Ma détermination m'a permis d'atteindre la seconde place du classement de ma promotion durant mes deux années 
-                    d'études supérieures.
-                    <br/><br/>
-                    J'apprécie effectuer des projets personnels ou dans le cadre de mon parcours scolaire. Ceux-ci me permettent
-                    de gagner en autonomie, en travail d'équipe et en expérience.
-                    <br/><br/>
-                    De plus, j'aime découvrir de nouveaux langages et frameworks, cela me permet de gagner en polyvalence et de m'adapter en fonction des nouveautés.
-
-
-                </p>
-
-                <div id="more">
-                    <ul class="contact">
-                        <li class="hidden leftTransition"><img class="icon" src="./assets/email.png" alt="email pic"><br/>thomas.gorisse07@gmail.com</li>
-                        <li class="hidden leftTransition"><a href="https://github.com/ThomasGorisseGit/"><img class="icon"src="./assets/github.png" alt="github pic"><br/>ThomasGorisseGit</a></li>
-                    </ul>
-                    <ul class="contact">
-                        <li class="hidden rightTransition" ><a href="./assets/cv/Gorisse Thomas CV.pdf" download="CV_Gorisse_Thomas"><img class="icon" src="./assets/cv.png" alt="icon de cv"><br/>Télécharger mon CV</a></li>
-                        <li class="hidden rightTransition"><a href="https://univ-cotedazur.fr/"><img  class="icon" src="./assets/uca-logo-haut.png" alt="logo universite cote d'azur"><br/> Ma formation</a></li>
-                    </ul>
-                
-                </div>
-            </div>
-
-        </section>
+        
     </main>
 </body>
 
